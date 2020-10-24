@@ -20,3 +20,4 @@ WantedBy=multi-user.target
 EOT
 systemctl daemon-reload
 systemctl enable node_exporter --now
+echo finish
