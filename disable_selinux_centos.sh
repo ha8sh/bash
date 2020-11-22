@@ -1,5 +1,5 @@
 
-#!/bin/bash:/usr/bin/bash
+#!/bin/bash
 
 tee -a /etc/selinux/config > /dev/null <<EOT
 
