@@ -1,9 +1,9 @@
 
 #!/bin/bash
 
-tee -a /etc/selinux/config > /dev/null <<EOT
+cat << EOF > /etc/selinux/config 
 
 SELINUX=disabled
 SELINUXTYPE=disabled
 
-EOT
+EOF
