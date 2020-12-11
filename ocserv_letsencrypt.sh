@@ -12,4 +12,5 @@ server-cert = /etc/letsencrypt/live/$DOMAIN/fullchain.pem
 server-key = /etc/letsencrypt/live/$DOMAIN/privkey.pem
 EOF
 
+hostnamectl set-hostname $DOMAIN
 systemctl restart ocserv
