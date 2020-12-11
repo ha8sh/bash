@@ -1,4 +1,6 @@
 #!/bin/bash
+yum install certbot  -y
+
 read -r -p "Enter your Mail: " MAIL
 read -r -p "Enter your Domain: " DOMAIN
 
@@ -14,3 +16,7 @@ EOF
 
 hostnamectl set-hostname $DOMAIN
 systemctl restart ocserv
+
+cat << EOF >> /var/spool/cron/root
+00 00 30 * * root certbot renew --quiet && systemctl restart ocserv
+EOF
