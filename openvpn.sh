@@ -28,7 +28,7 @@ After=syslog.target network.target
 [Service]
 Type=forking
 PrivateTmp=true
-ExecStart=/usr/sbin/openvpn --daemon --cd /etc/openvpn/ --config /etc/openvpn/servertcp.conf --writepid /var/run/openvpn_tcp.pid
+ExecStart=/usr/sbin/openvpn --daemon --cd /etc/openvpn/ --config /etc/openvpn/serverudp.conf --writepid /var/run/openvpn_udp.pid
 
 [Install]
 WantedBy=multi-user.target
