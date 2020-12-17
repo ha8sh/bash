@@ -47,7 +47,7 @@ SELINUXTYPE=disabled
 EOF
 
 
-
+systemctl daemon-reload
 systemctl enable openvpntcp --now
 systemctl enable openvpnudp --now
 systemctl enable firewalld --now
