@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install epel-release -y ; yum install nano wget htop nload openvpn firewalld -y
+yum install epel-release -y ; yum install nano wget net-tools htop nload openvpn firewalld -y
 
 setenforce 0
 
